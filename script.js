@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const gameBoard = document.getElementById('game-board');
     const resetButton = document.getElementById('reset-button');
     // カードの絵柄（絵文字）
-    const symbols = ['🐶', '🐱', '🐭', '🐹', '🐰', '🦊', '🐻', '🐼'];
+    const symbols = ['😺', '😹', '😻', '😾', '🙀', '😽', '😸', '😼'];
     let cards = [];
     let flippedCards = [];
     let lockBoard = false; // ボードをロックして連続クリックを防ぐ
