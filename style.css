@@ -56,12 +56,6 @@ h1 {
     transform: rotateY(180deg); /* 最初から裏返しておく */
 }
 
-/* マッチしたカードは少し透明にする */
-.card.matched {
-    opacity: 0.5;
-    cursor: default;
-}
-
 #reset-button {
     margin-top: 20px;
     padding: 10px 20px;
