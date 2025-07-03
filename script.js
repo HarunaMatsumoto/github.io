@@ -1,3 +1,5 @@
+// script.js
+
 document.addEventListener('DOMContentLoaded', () => {
     const gameBoard = document.getElementById('game-board');
     const resetButton = document.getElementById('reset-button');
@@ -70,8 +72,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const [card1, card2] = flippedCards;
         card1.removeEventListener('click', flipCard);
         card2.removeEventListener('click', flipCard);
-        card1.classList.add('matched');
-        card2.classList.add('matched');
 
         matchedPairs++;
         resetBoard();
