@@ -73,3 +73,10 @@ h1 {
     background-color: #4caf50;
     color: white;
 }
+
+/* カードの大きさに合わせて画像のサイズを修正 */
+.card-back img {
+    width: 90%; /* カードの幅の90% */
+    height: 90%; /* カードの高さの90% */
+    object-fit: contain; /* アスペクト比を保ったまま、要素に収まるように調整 */
+}
