@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
+
 body {
     font-family: 'Arial', sans-serif;
     display: flex;
@@ -5,19 +7,26 @@ body {
     align-items: center;
     flex-direction: column;
     height: 100vh;
-    background-color: #E0D7C2;
+    background-color: #f0f8ff;
     margin: 0;
 }
 
 h1 {
-    color: #333;
+    font-family: 'Hachi Maru Pop', cursive;
+    color:  #4caf50;
+    text-shadow: 
+        1px 1px 0 #fff,
+        -1px 1px 0 #fff,
+        1px -1px 0 #fff,
+        -1px -1px 0 #fff;
+    font-size: 3em;
 }
 
 #game-board {
     display: grid;
-    grid-template-columns: repeat(4, 80px); /* カードの幅に合わせて変更 */
+    grid-template-columns: repeat(4, 80px);
     gap: 10px;
-    perspective: 1000px; /* 3D回転のための奥行き */
+    perspective: 1000px;
 }
 
 .card {
@@ -30,14 +39,14 @@ h1 {
 }
 
 .card.flipped {
-    transform: rotateY(180deg); /* めくれた時にY軸に180度回転 */
+    transform: rotateY(180deg);
 }
 
 .card-face {
     position: absolute;
     width: 100%;
     height: 100%;
-    backface-visibility: hidden; /* 回転した時に裏側を非表示 */
+    backface-visibility: hidden;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -47,13 +56,13 @@ h1 {
 
 .card-front {
     background-color: #fff;
-    border: 2px solid #fff;
+    border: 2px solid #333;
 }
 
 .card-back {
-    background-color: #fff;
+    background-color: #4682b4;
     color: white;
-    transform: rotateY(180deg); /* 最初から裏返しておく */
+    transform: rotateY(180deg);
 }
 
 #reset-button {
@@ -63,14 +72,13 @@ h1 {
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    background-color: #F0B8CA;
+    background-color: #4caf50;
     color: white;
 }
 
-/* カードの大きさに合わせて画像のサイズを修正 */
 .card-back img {
-    width: 90%; /* カードの幅の90% */
-    height: 90%; /* カードの高さの90% */
-    object-fit: contain; /* アスペクト比を保ったまま、要素に収まるように調整 */
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
     border-radius: 10px;
 }
