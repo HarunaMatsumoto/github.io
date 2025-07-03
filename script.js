@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         //カードの裏面に画像を表示するように変更
         card.innerHTML = `
-            <div class="card-face card-front">?</div>
+            <div class="card-face card-front">♥</div>
             <div class="card-face card-back">
                 <img src="${imagePath}" alt="Card Image">
             </div>
