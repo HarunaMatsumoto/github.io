@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // カードの画像を配列で指定
     const imagePaths = [
-        'images/image1.png', 'images/image2.png', 'images/image3.png', 'images/image4.png',
-        'images/image5.png', 'images/image6.png', 'images/image7.png', 'images/image8.png'
+        'images/image1.JPG', 'images/image2.JPG', 'images/image3.JPG', 'images/image4.JPG',
+        'images/image5.JPG', 'images/image6.JPG', 'images/image7.JPG', 'images/image8.JPG'
     ];
     
     let flippedCards = [];
